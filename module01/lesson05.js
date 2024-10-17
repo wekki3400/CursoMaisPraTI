@@ -57,3 +57,6 @@ counter += step
 counter -= step
 counter *= step
 counter /= step
+
+
+console.log("pedro fez esse commit")
