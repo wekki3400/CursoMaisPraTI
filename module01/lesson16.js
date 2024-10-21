@@ -187,3 +187,5 @@ list.print()
 // console.log("Elemento na posicao 2", list.getData(2))
 // console.log("A lista esta vazia?", list.isEmpty())
 // console.log("tamanho da lista?", list.getSize())
+
+console.log("o pedro fez esse commit")
