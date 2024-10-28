@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Página Principal</title>
 
-        <meta charset="UTF-8">
-        <meta name="keywords" content="web development, HTML, CSS e Javascript">
-        <meta name="author" content="Perna Longa">
-        <meta name="description" content="Este site trata de conteudos introdutóriod do desenvolvimento web">
-    </head>
+<head>
+    <title>Página Principal</title>
+
+    <meta charset="UTF-8">
+    <meta name="keywords" content="web development, HTML, CSS e Javascript">
+    <meta name="author" content="Perna Longa">
+    <meta name="description" content="Este site trata de conteudos introdutórios do desenvolvimento web">
+
+    <style>
+       a {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(25, 190, 53);
+        border: 2px dashed;
+       }
+
+       a:link{
+        color: aqua;
+       }
+
+       a:visited{
+        color: blueviolet;
+       }
+
+       a:hover{
+        color: blue;
+        background-color: #6d6d6d;
+       }
+
+       a:active{
+        color: black;
+       }
+
+       p {
+        background-color: black;
+        color: white;
+        text-align: justify;
+        letter-spacing: normal;
+        word-spacing: 20px;
+        text-transform: uppercase;
+       }
+
+       ul {
+        list-style-type: none;
+        border: 1px solid black;
+        margin-bottom: 50px;
+       }
+
+       li {
+        margin-bottom: 5px;
+       }
+
+       ol {
+        list-style-type: upper-roman;
+        border: 1px solid black; 
+        padding-top: 10px;
+       }
+
+       table {
+        border: solid black;
+        width: 100%;
+        text-align: center;
+       }
+
+       th, td{
+        border: 1px solid orange;
+
+       }
+    </style>
+</head>
+
+
 <body>
     <nav>
         <a href="https://www.google.com">Pagina Principal</a>
@@ -18,7 +83,9 @@
 
     <header>
         <h1>Bem-vindo ao nosso site.</h1>
-        <h2>Bem-vindo ao nosso site.</h2>
+        <h1>Bem-vindo ao nosso site.</h1>
+        <h2 style="color: red;">Bem-vindo ao nosso site.</h2>
+        <h2 style="color: rgb(161, 9, 167);">Bem-vindo ao nosso site.</h2>
         <h3>Bem-vindo ao nosso site.</h3>
     </header>
     <hr>
@@ -28,7 +95,8 @@
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut nobis, id voluptas aperiam quae! Rem nobis impedit tempore delectus ut architecto numquam quia sunt nulla assumenda, ullam placeat laudantium?
         </p>
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci perspiciatis ab architecto praesentium minus doloremque! Hic molestias eveniet consequatur, aspernatur enim nesciunt explicabo tempora eius est at, laudantium nihil quos!
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci perspiciatis ab architecto praesentium minus doloremque! Hic molestias eveniet consequatur, aspernatur enim nesciunt explicabo tempora eius est at, laudantium nihil quos!
 
         </p>
 
@@ -80,7 +148,7 @@
         <hr>
 
         <section>
-            <table border="1" width="100%">
+            <table>
                 <tr>
                     <th>Produto</th>
                     <th>Descrição</th>
@@ -133,4 +201,6 @@
         <p>Desenvolvido por Miguel &copy;</p>
     </footer>
 </body>
+
+
 </html>
