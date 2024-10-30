@@ -27,10 +27,6 @@ li {
     font-style: italic
 }
 
-li{
-
-}
-
 ul > li:hover{
     background-color: grey;
 }
