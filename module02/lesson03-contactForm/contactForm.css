@@ -1,0 +1,41 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+form{
+    background-color:rgb(43, 183, 226) ;
+    padding: 20px;
+}
+
+.inputs:focus{
+    background-color: lightgrey;
+}
+
+.inputs{
+    
+}
+
+section{
+ 
+}
+
+.check:hover{
+    
+}
+
+#title{
+    text-align: center;
+    padding: 10px;
+    background-color:rgb(43, 183, 226) ;
+}
+
+#botaoEnviar:hover{
+    background-color: rgb(68, 68, 207);
+    transition: 0.3s ease, color 0.3 ease;
+}
+#botaoEnviar{
+    background-color: rgb(4, 4, 226);
+    color: white;
+    border-radius: 45px;
+    width: 80px;
+    height: 28px;
+}

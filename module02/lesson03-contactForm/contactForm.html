@@ -1,0 +1,74 @@
+<!--
+    criar um formulario de contato com validacoes
+    nome 
+    email (deve validar o formato de email)
+    mensagem 
+    telefone (opcional)
+    assunto (campo de selecao cm 3 opcoes: duvida, suporte, feedback)
+    chackbox termos de uso
+
+    incluir botao de envio qu so e habilitado cm todos os campos obrigatorios preenchidos 
+    adcione um placeholder para cada campo
+
+    61 98307-4417
+    CSS
+
+    adicione uma bordaao redor do formlario com os cantos arredondados
+    ultilize os espacamentos adequados entre os campos ||
+    altere a cor de fundo e o estilo da fonte ||
+    aplique foco (:focus) nos campos destacando quando o usuario estiver interaindo com eles ||
+    estilize o botao de enviopara parecer um botao moderno (com sombras efeito hover e animacao suave quando pressionado) ||
+    alinhe os rotulos <label> dos campos a esquerda e os inputs a direita criando uma boa legibilidade 
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contactForm.css">
+</head>
+<body>
+    <header>
+        <h2 id="title">Formulário de Contato</h2>
+    </header>
+    <section id="section">
+        <form>
+            <label class="form" for="nome">Nome: </label>
+            <input class="inputs" type="text" required>
+            <br><br>
+
+            <label class="form" for="email">Email: </label>
+            <input class="inputs" type="email" required>
+            <br><br>
+
+            <label class="form" id="mensagem" for="email">Mensagem: </label>
+            <input class="inputs" type="text" required>
+            <br><br>
+
+            <label class="form" for="telefone">Telefone: </label>
+            <input class="inputs" type="tel" id="phone" name="phone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}"/>
+            <br>
+            <small>Formato: xx 12345-6789</small>
+            <br><br>
+            
+            <input class="check" type="checkbox" name="assunto" id="assunto">
+            <label for="assunto">Duvida</label>
+
+            <input class="check" type="checkbox" name="assunto" id="assunto">
+            <label for="assunto">Feedback</label>
+
+            <input class="check" type="checkbox" name="assunto" id="assunto">
+            <label for="assunto">Suporte</label>
+           <br><br>
+            <input class="check" type="checkbox" name="termos" id="termos" required>
+            <label for="termos">Aceito os termos de uso</label>
+            <br><br>
+
+            <button id="botaoEnviar">Enviar</button>
+        </form>
+    </section>
+    
+</body>
+</html>
