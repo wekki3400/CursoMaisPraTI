@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <form>
+        <h1>Cadastro de Eventos</h1>
+
+        <label for="nome">Nome Completo:</label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="seuEmail@gmail.com">
+        
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha">
+        
+        <label for="confirme-senha">Confirme sua senha:</label>
+        <input type="password" name="confirme-senha" id="confirme-senha">
+        
+        <label for="genero">Genero:</label>
+        <select name="genero" id="genero">
+            <option value=""></option>
+            <option value="masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select>
+        <br>
+
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" name="data-nascimento" id="data-nascimento">
+
+        <label for="pais">País:</label>
+        <select name="pais" id="pais">
+            <option value=""></option>
+            <option value="Brasil">Brasil</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Uruguai">Uruguai</option>
+        </select>
+        <br>
+
+        <label for="estado">Estado:</label>
+        <select name="estado" id="estado">
+            <option value=""></option>
+            <option value="Ceará">Ceará</option>
+            <option value="Amapá">Amapá</option>
+            <option value="Mato Grosso">Mato Grosso</option>
+        </select>
+        <br>
+
+        <fieldset>
+            <legend>Preferencias de Comunicação</legend>
+            <input type="checkbox" name="email-novidades" id="email-novidades" value="email-preferencia">
+            <label class="inline-label" for="email-novidades">Receber atualizações por email</label><br>
+
+            <input type="checkbox" name="sms-novidades" id="sms-novidades" value="sms-preferencia">
+            <label class="inline-label" for="sms-novidades">Receber atualizações por sms</label><br>
+        </fieldset>
+
+        <label for="foto-perfil">Foto de Perfil:</label>
+        <input type="file" name="foto-perfil" id="foto-perfil">
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
