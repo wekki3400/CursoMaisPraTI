@@ -1,0 +1,69 @@
+<!--
+formulario de cadastro ecommerce
+
+nome completo
+Email
+senha
+selecione pais
+gewnero
+termos servico
+
+CSS
+hover no botao enviar
+largura de 400px e  esteja centralizado
+
+dicas
+ultilizar form, input, select e textarea
+padding margin e hover melhora estilizacao 
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="actv.css">
+    <title>Atividade</title>
+</head>
+<body>
+    <form>
+        <h1>Cadastro lojinha</h1>
+
+        <label for="nome">Nome Completo:</label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email">
+
+        <label for="senha">senha:</label>
+        <input type="password" name="senha" id="senha">
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="33"> </textarea>
+
+        <label for="pais">País:</label>
+        <select name="pais" id="pais">
+            <option value="brasil">Brasil</option>
+            <option value="argentina">Argentina</option>
+            <option value="uruguai">Uruguai</option>
+        </select>
+
+        <label for="genero">Genero:</label>
+        <input type="radio" id="masculino" name="genero" value="masculino"/>
+        <label class="inline-label" for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="genero" value="feminino"/>
+        <label class="inline-label" for="feminino">Feminino</label>
+        <input type="radio" id="outro" name="genero" value="outro"/>
+        <label class="inline-label" for="outro">Outro</label>
+
+        <fieldset>
+            <input type="checkbox" name="termos-serviço" id="termos-serviço" value="termos-serviço" required>
+            <label class="inline-label" for="termos-serviço">Aceito os termos de serviço</label>
+        </fieldset>
+        
+        
+        <button>Enviar</button>
+    </form>
+    
+</body>
+</html>
